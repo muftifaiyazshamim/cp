@@ -6,7 +6,12 @@ int main() {
     vector<char> s2;
     for (int i = 0; i < s.size(); i++)
     {
-        if(s[i]!='a' && s[i]!='e'&&s[i]!='i'&&s[i]!='o'&&s[i]!='u'&&s[i]!='A'&&s[i]!='E'&&s[i]!='I'&&s[i]!='O'&&s[i]!='U') {s2.push_back('.');s2.push_back(s[i]);}
+        if(s[i]!='a' && s[i]!='e'&&s[i]!='i'&&s[i]!='o'&&s[i]!='u'&&s[i]!='A'&&s[i]!='E'&&s[i]!='I'&&s[i]!='O'&&s[i]!='Y' && s[i]!='y') 
+        { 
+            if(s[i]>=65 && s[i]<=90) s[i]=s[i]+32;
+            s2.push_back('.');
+            s2.push_back(s[i]);
+        }
     }
     for (int i = 0; i < s2.size(); i++)
     {
