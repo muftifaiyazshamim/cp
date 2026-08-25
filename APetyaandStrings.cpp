@@ -17,7 +17,7 @@ int main() {
     sort(vs.begin(),vs.end());
     if(s==s2) {cout<<0;return 0;}
     else{
-        if(vs[0]==p) cout<<-1;
+        if(vs[0]==s) cout<<-1;
         else  cout<<1;
     }
 
