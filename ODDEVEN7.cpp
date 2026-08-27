@@ -9,19 +9,15 @@ int main() {
 	    vector<long long int>v,me,mo,n ;
 	    for(int j=0;j<a;j++){
 	        long long int x;cin>>x;v.push_back(x);
+			if(x%2==0) e++;
+			else o++;
 	    }
 	   
-	    for(int j=0;j<min(o,e);j++){
-	        if(o>e){
-                if(v[i]%2==0){    
-	            n.push_back(v[i]);
-                }
-	        else if (o<e){
-	            n.push_back(mo[i]);
-	             n.push_back(me[i]);
-	        }
-	    }
-      cout<<n.size()<<endl;
+	   
+	    if (o==e) cout<<o+e<<endl;
+		else if (o>e) cout<<2*e+1<<endl;
+		else cout<<2*o+1<<endl; 
+     
 	    
 	}
 
