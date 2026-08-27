@@ -5,7 +5,7 @@ int main() {
     string s;cin>>s;
     int z=0,o=0;
     if(s.size()<7) {cout<<"NO";return 0;}
-    for (int i = 0; i < s.size()-7; i++)
+    for (int i = 0; i <= s.size()-7; i++)
     {
         string su=s.substr(i,7);
         if(su=="1111111") o++;   
