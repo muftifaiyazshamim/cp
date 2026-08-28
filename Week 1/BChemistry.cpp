@@ -3,12 +3,23 @@ using namespace std;
 
 int main() {
     int t;cin>>t;
-    for (int i = 0; i <t; i++)
-    {
-        int a,b;cin>>a>>b;
-        string s;cin>>s;
+    while (t>0)
+    {int a,b;cin>>a>>b;
+     int pal=0;   
+     string s,su;cin>>s;
+     su=s;
+     su.reserve();
+     if (s==su) pal=1;
+     else if(s!=su){
         
-    }
+        
+     }
+     
+
+     if(pal==1 && b==0) cout<<"YES"<<endl;
+        
+    t--;}
+    
     
     
 
