@@ -11,7 +11,7 @@ int main() {
         fp=s.find('B');
         lp=s.rfind('B');
 
-        cout<<fp-lp+1<<endl;   
+        cout<<-fp+lp+1<<endl;   
     t--;}
     
     
