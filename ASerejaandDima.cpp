@@ -26,7 +26,6 @@ int main() {
         int mx1=max(v[i],v[j]);
         if(mx1==v[j]) {
             s=s+max(v[i],v[j]);
-            
             d=d+max(v[i],v[j-1]);
             i++;
         }
