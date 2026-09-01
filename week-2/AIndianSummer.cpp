@@ -13,10 +13,7 @@ int main() {
         s.insert(x);
         
     }
-    for (auto x:s)
-    {
-        cout<<x<<endl;
-    }
+    cout<<s.size();
 
     return 0;
 }
