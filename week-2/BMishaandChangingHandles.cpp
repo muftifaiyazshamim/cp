@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     
-    int a;cin>>a;
+    int a,f=0;cin>>a;
     vector<pair<string,string>>s(a);
     set<pair<string,string>>su;
     for (int i = 0; i <a; i++)
@@ -12,18 +12,18 @@ int main() {
         s[i].first=s1;
         s[i].second=s2;
     }
-    for (int i = 0; i < a-1; i++)
+    for (int i = 0; i < a; i++)
     {
-        for (int j = 1; j < a; j++)
+        for (int j = i+1; j < a; j++)
         {
             if (s[i].second==s[j].first)
             {
                 s[i].second=s[j].second;
-
+                f=1;
             }
             
         }
-        su.insert(s[i].first,s[i].second);
+        if(f==1) su.insert({s[i].first,s[i].second});
         
     }
     for (auto x:su)
