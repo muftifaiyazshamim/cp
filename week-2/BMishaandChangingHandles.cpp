@@ -14,19 +14,21 @@ int main() {
     }
     for (int i = 0; i < a; i++)
     {
-        f=0;
+        
         for (int j = i+1; j < a; j++)
         {
-            if (s[i].second==s[j].first)
+            if (s[j].first!="" && s[i].second==s[j].first)
             {
                 s[i].second=s[j].second;
-                f=1;
+                s[j].first="";
+                
             }
             
         }
-        if(f==1) su.insert({s[i].first,s[i].second});
+        if(s[i].first!="") su.insert({s[i].first,s[i].second});
         
     }
+    cout<<su.size()<<endl;
     for (auto x:su)
     {
         cout<<x.first<<" "<<x.second<<endl;
