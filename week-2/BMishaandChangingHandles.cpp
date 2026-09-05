@@ -14,6 +14,7 @@ int main() {
     }
     for (int i = 0; i < a; i++)
     {
+        f=0;
         for (int j = i+1; j < a; j++)
         {
             if (s[i].second==s[j].first)
