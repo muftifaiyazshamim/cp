@@ -21,7 +21,8 @@ int main() {
         ju.pop_back();
 
      i--;}
-    vector<int>v(su.begin(), su.end());
+    vector<string>v(su.begin(), su.end());
+    reverse(v.begin(), v.end());
      for (auto i:v )
      {
         cout<<i<<endl;
