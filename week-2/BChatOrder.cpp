@@ -7,7 +7,7 @@ int main() {
     cin>>a;
     
     deque<string>ju;
-    set<string> su;
+    unordered_set<string> su;
     for (int i = 0; i < a; i++)
     
     {string s;cin>>s;
