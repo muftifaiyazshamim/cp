@@ -7,9 +7,9 @@ int main() {
     while (t>0)
     
     {string s;cin>>s;
-    if(v[s]==0) {v[s]++;cout<<"OK"<<endl;}
+    if(v[s]==0) {cout<<"OK"<<endl;}
     else cout<<s<<v[s]<<endl;
-        
+    v[s]++;    
     t--;}
     
 
