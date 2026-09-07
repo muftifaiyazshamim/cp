@@ -17,12 +17,11 @@ int main() {
      while (i>=0)
      {
         su.insert(ju[i]);
-     
-        
+             
         ju.pop_back();
 
      i--;}
-     for (auto i:ju )
+     for (auto i:su )
      {
         cout<<i<<endl;
      }
