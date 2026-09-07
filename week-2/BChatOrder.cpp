@@ -16,17 +16,14 @@ int main() {
     int i=a-1;
      while (i>=0)
      {
-        su.insert(ju[i]);
+        if (su.insert(ju[i]).second)
+            cout<<ju[i]<<endl;
+
              
         ju.pop_back();
 
      i--;}
-    vector<string>v(su.begin(), su.end());
-    reverse(v.begin(), v.end());
-     for (auto i:v )
-     {
-        cout<<i<<endl;
-     }
+    
      
     
 
