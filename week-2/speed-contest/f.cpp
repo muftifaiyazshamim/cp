@@ -12,10 +12,10 @@ int main() {
         if(a==3) m=min(v[0]+v[1],v[1]+v[2]);
         else if(a==2) m=v[0]+v[1];
         else {
-        for (int i = 0; i < a-3; i++)
+        for (int i = 0; i < a-1; i++)
             {
         
-            m=min(v[i]+v[i+1],v[i+1]+v[i+2]);
+            m=v[i]+v[i+1];
             vl.push_back(m);
             
             }
