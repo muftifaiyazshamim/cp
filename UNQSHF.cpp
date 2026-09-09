@@ -13,7 +13,7 @@ int main() {
             if(s[i]=='a') a1++;
             else if(s[i]=='b') b1++;
             else if(s2[i]=='a') a2++;
-            else if(s2[i]=='a') b2++;
+            else if(s2[i]=='b') b2++;
         }
 	    if(al%2==0){
 	        if(a1==a2 && b1==b2) cout<<"YES"<<endl;
