@@ -20,7 +20,8 @@ int main() {
             else cout<<"NO"<<endl;
 	        }
 	   else{
-            
+            if((a1==a2-1 || a1-1==a2)&&(b1==b2-1 || b1-1==b2)) cout<<"YES"<<endl;
+            else cout<<"NO"<<endl;
            }
            
 	     
