@@ -15,7 +15,7 @@ int main() {
             else if(s2[i]=='a') a2++;
             else if(s2[i]=='a') b2++;
            }
-	    if(al%2==1) {
+	    if(al%2==1){
 	        
 	        }
 	   else{
