@@ -7,13 +7,14 @@ int main() {
     {int a,b,k=1,earn=0;cin>>a>>b;
         earn=b*k*k;//day 1 earning
         int cost=-(b*k*k);
-        for (int i = 2;; i++)
+        for (int i = 2;cost!=0; i++)
         {
             earn=earn+(b*k*k);
             if (earn>=a){ earn=earn-a;k++;} 
-            cost=cost-earn;
+            cost=cost+earn;
            
         }
+        
         
         
     t--;}
