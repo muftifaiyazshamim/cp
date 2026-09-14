@@ -10,10 +10,42 @@ int main() {
         int x;cin>>x;v.push_back(x);
         mp[x]++;      
     }
+    priority_queue<int>p;
     for (auto [x,y]:mp )
     {
-        cout<<y<<"<-"<<x<<endl;
+        p.push(y);
+        // cout<<y<<"<-"<<x<<endl;
     }
+    while (!p.empty())
+    {
+        if (p.size()<2)
+        {
+            break;
+        }
+        
+        int x,y;
+        x=p.top();
+        p.pop();
+        y=p.top();
+        p.pop();
+        x--,y--;
+        if (x>=1)
+        {
+            p.push(x);
+        }
+        if(y>=1){
+            p.push(y);
+
+        }
+
+    }
+    int a=0;
+    while (!p.empty())
+    {
+        a=a+p.top();
+        p.pop();
+    }
+    cout<<a<<endl;
     
      
    t--;}
