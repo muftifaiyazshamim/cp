@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     
-    int t;cin>>t;
+    int t,cust=1;cin>>t;
     set<pair<int,int>>su;
     multiset<pair<int,int>>mu;
     vector<int>as;
@@ -12,12 +12,15 @@ int main() {
         int a,b;cin>>a;
         if(a==1){
             cin>>b;
-            su.insert({i,b});
-            mu.insert({b,-i});
+            su.insert({cust,b});
+            mu.insert({b,-cust});
+            cust++;
         }
         else if(a==2){
-            int x=-su.begin()->first,y=su.begin()->second;
-
+            int x=su.begin()->first,y=su.begin()->second;
+            as.push_back(x);
+            su.erase(su.begin());
+            mu.erase({y,-x});
 
         }
         else{
@@ -27,6 +30,11 @@ int main() {
             su.erase({x,y});
         }
     }
+    for (auto x:as)
+    {
+        cout<<x<<" ";
+    }
+    
     
     
     
