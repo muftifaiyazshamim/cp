@@ -24,7 +24,7 @@
 #3
 # Create an array of integers from one to ten
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 one_to_ten = np.arange(1,11)
 doubling_array = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
 # Create your scatterplot
