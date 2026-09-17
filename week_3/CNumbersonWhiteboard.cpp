@@ -5,27 +5,16 @@ int main() {
     
     int t;cin>>t;while (t>0)
     {int a;cin>>a;
-    multiset<int>d;
-    for (int i = 1; i <= a; i++)
+    cout<<"2"<<endl;
+    cout<<a<<" "<<a-1<<endl;
+    int p=a;
+    int q=a-2;
+    while (p+q/2!=2)
     {
-      d.insert(i);  
+        cout<<q<<" "<<p<<endl;
+        p--;q--;
     }
-    vector<pair<int,int>>v;
-
-    while (d.size()>1)
-    {
-        d.erase(a);
-        d.erase(ceil(a/2));
-        v.push_back({ceil(a/2),a});
-    }
-    for(auto x:d){
-        cout<<x<<" ";
-    }
-    cout<<"endl";
-    for (int i = 0; i < v.size(); i++)
-    {
-        cout<<v[i].first<<" "<<v[i].second<<endl;
-    }
+    
     
         
         
