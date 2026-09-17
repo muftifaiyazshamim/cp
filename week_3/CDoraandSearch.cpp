@@ -11,8 +11,9 @@ int main() {
         {
             int x;cin>>x;v.push_back(x);
         }
+        int mn=1,mx=a;
         for (int i = 0,j=a-1; i < j;)
-        {   int mn=1,mx=a;
+        {   
             if((v[i]!=mn && v[j]!=mx)&&(v[j]!=mn && v[i]!=mx)) {
                 cout<<i+1<<" "<<j+1<<endl;
                 f=1;break;
