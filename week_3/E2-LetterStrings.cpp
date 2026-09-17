@@ -20,7 +20,8 @@ int main() {
         {
             for (long long int j = i+1; j < cu; j++){
             string s1=v[i].first,s2=v[j].first;
-            if(((s1[0]!=s2[0])&&(s1[1]==s2[1]))||((s1[1]!=s2[1])&&(s1[0]==s2[0]))) c=c+v[i].second*v[j].second;
+            long long int n1=v[i].second,n2=v[j].second;
+            if(((s1[0]!=s2[0])&&(s1[1]==s2[1]))||((s1[1]!=s2[1])&&(s1[0]==s2[0]))) c=c+n1*n2;
             }
         } 
         cout<<c<<endl;   
