@@ -9,7 +9,7 @@ int main() {
     cout<<a<<" "<<a-1<<endl;
     int p=a;
     int q=a-2;
-    while (p+q/2!=2)
+    while (((p+q)/2)!=2)
     {
         cout<<q<<" "<<p<<endl;
         p--;q--;
