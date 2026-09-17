@@ -5,7 +5,7 @@ int main() {
     
     int t;cin>>t;while (t>0)
     {int a;cin>>a;
-    set<int>d;
+    multiset<int>d;
     for (int i = 1; i <= a; i++)
     {
       d.insert(i);  
