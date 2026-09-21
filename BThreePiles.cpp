@@ -3,10 +3,11 @@ using namespace std;
 
 int main() {
     
-    int t;cin>>t;
+    long long int t;cin>>t;
     while (t>0)
-    {int a,b,c;cin>>a>>b>>c;
-    cout<<a+c-b<<endl;
+    {long long int a,b,c;cin>>a>>b>>c;
+    if(abs(a+c-b)>abs(a+0-b)) cout<<abs(a+c-b)<<endl;
+    else cout<<abs(a-b)<<endl;
         /* code */
     t--;}
     

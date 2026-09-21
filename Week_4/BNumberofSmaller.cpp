@@ -15,7 +15,7 @@ int main() {
     }
     for (int i = 0; i < b; i++)
     {long long int c=0;
-        for (long long int j = 0; j < b; j++)
+        for (long long int j = 0; j < a; j++)
         {
             if(v2[i]>v[j]) c++;
         }
