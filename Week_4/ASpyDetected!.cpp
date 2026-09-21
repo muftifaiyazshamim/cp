@@ -14,7 +14,7 @@ int main() {
         {
             mp[v[i]].push_back(i);
         }
-        for(auto x : mp)
+        for(auto x:mp)
         {
              if(x.second.size()==1) {cout<<x.second[0]+1<<endl;break;} 
         }
