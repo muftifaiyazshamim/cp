@@ -7,13 +7,13 @@ while(t>0){
     int a,b,f;cin>>a>>b;
     if(a<b) cout<<a<<endl;
     else{
-        for (int i = 1,j=1; ; i++)
+        for (int i = 1,j=1; ;j++, i++)
         {
             if(j==a) {f=i;break;}
             if(i%b==0)i++;
             
         }
-        cout<<f<<endl;
+        cout<<f+1<<endl;
     }
     
 
