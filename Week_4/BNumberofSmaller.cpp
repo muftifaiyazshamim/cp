@@ -18,7 +18,7 @@ int main() {
     long long int c=0;
     for (int i = 0; i < b; i++)
     {
-        while(v2[i]>v[c])
+        while(c<a && v2[i]>v[c])
         {
            c++;
         }
