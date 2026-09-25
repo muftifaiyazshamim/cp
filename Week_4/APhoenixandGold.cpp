@@ -22,12 +22,13 @@ int main() {
             cout<<endl;
             }
         else{
+            cout<<"YES"<<endl;
             sort(v.rbegin(),v.rend());
             int su=0;
             for (int i = 0; i < v.size(); i++)
             {
                 su=su+v[i];
-                if(su==b) swap(v[i],v[i+1]);
+                if(su==b) {swap(v[i],v[i+1]);break;}
             }
             for (auto x: v)
             {
