@@ -12,7 +12,10 @@ long long int t;cin>>t;
 for (long long int i = 0,j=b-1; i < a; i++)
 {
     if(s[i]=='W') w++;
-    if(i==j){ v.push_back(w);j=j+b;w=0;}
+    if(i==j){ 
+        v.push_back(w);
+        j++;
+        if(s[i-b+1]=='W') w--;}
 }
 sort(v.begin(),v.end());
 cout<<v[0]<<endl;
