@@ -1,34 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-//val ouisena
 int main() {
-    
-    int su,f=1;;
+
     string s;cin>>s;
-    su=stoi(s);
-    su++;
-    s=to_string(su);
-    for (int i = 0; i < s.size()-1; i++)
+
+    for (int i = 0; i < s.size(); i++)
     {
-        for (int j = i+j; j < s.size(); j++)
-        {
-            if (s[i]==s[j]) {
-                su++;
-                s=to_string(su);
-                i=0;
-
-            }
-            
-        }
-        
+        if(s[i]==s[i+1]||s[i]==s[i+2]||s[i]==s[i+3])
     }
-
-
-   
-   
-
-    cout<<s;
-
+    
 
     return 0;
 }
