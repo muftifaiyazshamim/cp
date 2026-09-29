@@ -9,7 +9,7 @@ int main() {
         int a,b,f=0;cin>>a>>b;
         string s;cin>>s;
         int su=0;
-            /* code */
+           
         for (int i = 0; i < s.size()-1; i++)
         {
             if(s[i]=='0'){
