@@ -14,10 +14,10 @@ int main() {
     for (int i = 0,j=0; i < n;)
     {
        
-    if (sum<x)  {sum=sum+v[j];j++;}
+    if (sum<x && j<n)  {sum=sum+v[j];j++;}
     else if(sum>x) {sum=sum-v[i]; i++;}
-    else {su++;sum=sum-v[i]; i++;}
-            
+    else if(sum==x) {su++;sum=sum-v[i]; i++;}
+    else break;
     }
     cout<<su;
     
