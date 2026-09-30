@@ -8,21 +8,18 @@ int main() {
     {
         int a,b,f=0;cin>>a>>b;
         string s;cin>>s;
-        int su=0;
+    while (true)
+    {
            
-        for (int i = 0; i < s.size()-1; i++)
+        for (int i = 0; i < s.size(); i++)
         {
-            if(s[i]=='0'){
-                for (int j = i+1; j < s.size(); j++)
-                {
-                    if(s[j]=='1') {su=su+j;i=j-1;break;}
-
-                }
-            }
+            if(f==b) break;
+            if(s[i]=='0' &&  s[i+1]=='1') {s[i]='1';f++;}
             
         }
+        if(f==b) break;
         
-    
+    }
         int pu=0;
         for (int i = 0; i < s.size(); i++)
         {
