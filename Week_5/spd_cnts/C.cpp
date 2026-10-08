@@ -9,7 +9,7 @@ int main() {
         long long int a,b,x=1;cin>>a>>b;
         while (true)
         {
-        if(a*x%b==0) {cout<<x<<endl;break;}
+        if((a*x)%b==0) {cout<<x<<endl;break;}
         x++;
         }
         
