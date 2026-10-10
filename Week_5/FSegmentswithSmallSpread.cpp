@@ -14,12 +14,12 @@ int main() {
 
     while(r<a){
        ml.insert(v[r]);
-       while (*ml.rbegin()-*ml.rend())
+       while (*ml.rbegin()-*ml.begin()>x)
        {
         ml.erase(ml.find(v[l]));
         l++;
        }
-       pu=pu+l-r+1;
+       pu=pu+r-l+1;
         r++;
     }
     cout<<pu<<endl;
