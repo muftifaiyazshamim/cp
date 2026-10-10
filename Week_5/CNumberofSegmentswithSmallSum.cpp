@@ -19,7 +19,7 @@ int main() {
                 su=su-v[l];
                 l++;
             }
-            
+            if(su<=x){pu=pu+r-l+1;}
         }
         r++;
     }
