@@ -13,7 +13,7 @@ int main() {
     int c=0;
     for (auto x:v)
     {
-        if(x<=a && a-x>0) {c++;a=a-x;}
+        if(x<=a && a-x>=0) {c++;a=a-x;}
         else break;
     }
     cout<<c;
