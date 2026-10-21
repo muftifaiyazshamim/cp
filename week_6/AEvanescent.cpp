@@ -17,10 +17,7 @@ int main() {
             if (s[i-1]==s[i+1] && s[i]!=s[i-1]) su=2;
             else if(s[i]!=s[i-1] && s[i]!=s[i+1] && su==0) su=1;
         }
-        cout<<bu-su<<endl;
-        
-        
-        
+        cout<<bu-su<<endl;    
 
     }
     
