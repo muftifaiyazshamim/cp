@@ -12,6 +12,11 @@ int main() {
         {
             cin>>v[i]; mx=max(mx,v[i]);
         }
+        for (int i = 1; i < mx; i++)
+        {
+          
+            
+        }
         
 
         

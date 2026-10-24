@@ -6,9 +6,7 @@ long long int pohr(long long int a,long long int b){
     long long int temp=pohr(a,b/2);
     temp=temp*temp%og;
     if (b%2==1) temp=temp*(a%og)%og;
-   return temp;
-
-
+    return temp;
 }
 int main() {
     
@@ -16,9 +14,7 @@ int main() {
     while (t--)
     {
         long long int a,b;cin>>a>>b;
-       
-        cout<<pohr(a,b)<<"\n";
-        
+        cout<<pohr(a,b)<<"\n"; 
     }
     
 
