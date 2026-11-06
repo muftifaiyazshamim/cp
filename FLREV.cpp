@@ -17,5 +17,6 @@ while(t--){
     else if(cu>=3) bu=bu+2;
 
     cout<<bu<<endl;
+    
 
 }
