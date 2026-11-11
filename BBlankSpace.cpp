@@ -16,8 +16,7 @@ int main() {
                 mx=max(mx,cu);
             }
             else cu=0;
-            
-            // v.push_back(x);
+          
         }
         cout<<mx<<endl;
     }
