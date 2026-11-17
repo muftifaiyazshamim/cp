@@ -21,6 +21,7 @@ signed main() {
     }
     sort(v.begin(),v.end());
     for (int i = 0; i < a; i++)
+    
     {
         au=au+pb.size()-pb.order_of_key(v[i].second);
         pb.insert(v[i].second);
